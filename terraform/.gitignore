@@ -1,0 +1,31 @@
+# Terraform local cache and modules (all project folders)
+**/.terraform/*
+
+# Terraform state files (all project folders)
+**/*.tfstate
+**/*.tfstate.*
+
+# Terraform crash logs (all project folders)
+**/crash.log
+**/crash.*.log
+
+# Ignore CLI config files that may contain credentials
+.terraformrc
+terraform.rc
+**/.terraformrc
+**/terraform.rc
+
+# Ignore override files (all project folders)
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+# Ignore variable definitions that often contain secrets
+**/*.tfvars
+**/*.tfvars.json
+
+# Keep lock files tracked so CI resolves the same provider versions every run.
+# (The `**/.terraform/*` rule above already excludes the provider binaries;
+# the lock file itself lives beside the .tf files and must stay committed.)
+!**/.terraform.lock.hcl
