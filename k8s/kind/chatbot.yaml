@@ -26,12 +26,13 @@ spec:
       labels:
         app: it-support-chatbot
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: chatbot
           # The pipeline pushes both :latest and an immutable short-SHA tag;
           # prefer the SHA tag (e.g. :ae78a7c) when you want to pin exactly
           # what you are observing.
-          image: vijaynvb/it-support-chatbot:latest
+          image: vijaynvb/it-support-chatbot:stable
           # Always pull so :latest actually refreshes. kind caches images in each
           # node's containerd, and IfNotPresent would pin you to a stale layer.
           imagePullPolicy: Always

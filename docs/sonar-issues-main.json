@@ -1,0 +1,2135 @@
+﻿{
+  "total": 46,
+  "p": 1,
+  "ps": 500,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 500,
+    "total": 46
+  },
+  "effortTotal": 1421,
+  "debtTotal": 1421,
+  "issues": [
+    {
+      "key": "AaAZW0F3SsHxXiTaeXRJ",
+      "rule": "githubactions:S8264",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 7,
+      "hash": "19ce26d245449520baf3455e6057a38f",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 2,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this read permission from workflow level to job level.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T09:29:39+0000",
+      "updateDate": "2026-08-19T09:29:51+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZW0F3SsHxXiTaeXRK",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 28,
+      "hash": "9afb735d61b4bb6c1b4d01957def2c0b",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 14,
+        "endOffset": 53
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T09:29:39+0000",
+      "updateDate": "2026-08-19T09:29:51+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI751",
+      "rule": "githubactions:S8233",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 6,
+      "hash": "6c3eaae39258d2cac67f5b6958e26e95",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 12,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Move this write permission from workflow level to job level.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI75v",
+      "rule": "githubactions:S8544",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 22,
+      "hash": "8ba2f524988a5cc075e5ec2d9686cb4a",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 10,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Using dependencies without locking resolved versions is security-sensitive.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI75w",
+      "rule": "githubactions:S8541",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 23,
+      "hash": "d797cdf637faab4c1ee8a36497faad7a",
+      "textRange": {
+        "startLine": 23,
+        "endLine": 23,
+        "startOffset": 10,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Omitting \"--only-binary :all:\" can lead to the execution of setup scripts. Make sure it is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI75x",
+      "rule": "githubactions:S8544",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 23,
+      "hash": "d797cdf637faab4c1ee8a36497faad7a",
+      "textRange": {
+        "startLine": 23,
+        "endLine": 23,
+        "startOffset": 10,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Using dependencies without locking resolved versions is security-sensitive.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI75y",
+      "rule": "githubactions:S6573",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 34,
+      "hash": "60a93750da31200cfbcf75ef0c04c310",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 10,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Prefix files and paths with \"./\" or \"--\" when using glob.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI75z",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 56,
+      "hash": "92fb1c910e32b2f46aab381177f46679",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 12,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsu1fjOEeoxI750",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 61,
+      "hash": "6f0951e31d05c35d4940bb82847aef16",
+      "textRange": {
+        "startLine": 61,
+        "endLine": 61,
+        "startOffset": 12,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "f8d9475b-5564-4308-b25c-c6e01af6752f",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZso1fjOEeoxI75u",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/03-tf-bootstrap.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 33,
+      "hash": "e2b36fbd3219168dc5af004eb76dc248",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs91fjOEeoxI758",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/04-infra-eks.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 44,
+      "hash": "55120b8066fc259fe88001942536a9ef",
+      "textRange": {
+        "startLine": 44,
+        "endLine": 44,
+        "startOffset": 14,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs91fjOEeoxI759",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/04-infra-eks.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 48,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs91fjOEeoxI75-",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/04-infra-eks.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 117,
+      "hash": "55120b8066fc259fe88001942536a9ef",
+      "textRange": {
+        "startLine": 117,
+        "endLine": 117,
+        "startOffset": 14,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs91fjOEeoxI75_",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/04-infra-eks.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 121,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 121,
+        "endLine": 121,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75k",
+      "rule": "githubactions:S7630",
+      "severity": "BLOCKER",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 43,
+      "hash": "72d10dd7d72aefcb818fb558710b538f",
+      "textRange": {
+        "startLine": 43,
+        "endLine": 43,
+        "startOffset": 19,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "inputs.image_tag is vulnerable to script injection: values of inputs are provided by whoever triggers the workflow. Change this workflow to not use user-controlled data directly in a run block, for example by assigning this expression to an environment variable.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75l",
+      "rule": "githubactions:S8544",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 58,
+      "hash": "8ba2f524988a5cc075e5ec2d9686cb4a",
+      "textRange": {
+        "startLine": 58,
+        "endLine": 58,
+        "startOffset": 10,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Using dependencies without locking resolved versions is security-sensitive.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75m",
+      "rule": "githubactions:S8541",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 59,
+      "hash": "d797cdf637faab4c1ee8a36497faad7a",
+      "textRange": {
+        "startLine": 59,
+        "endLine": 59,
+        "startOffset": 10,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Omitting \"--only-binary :all:\" can lead to the execution of setup scripts. Make sure it is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75n",
+      "rule": "githubactions:S8544",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 59,
+      "hash": "d797cdf637faab4c1ee8a36497faad7a",
+      "textRange": {
+        "startLine": 59,
+        "endLine": 59,
+        "startOffset": 10,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Using dependencies without locking resolved versions is security-sensitive.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75o",
+      "rule": "githubactions:S6573",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 69,
+      "hash": "9142e2a31faa5f30ba062ec932a7eb76",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 69,
+        "startOffset": 10,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Prefix files and paths with \"./\" or \"--\" when using glob.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75p",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 80,
+      "hash": "0cf4bb729ca1c7f55c7b80329c807a3f",
+      "textRange": {
+        "startLine": 80,
+        "endLine": 80,
+        "startOffset": 14,
+        "endOffset": 43
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75q",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 83,
+      "hash": "e6023cd0fc00a9beddd53a0a6644a588",
+      "textRange": {
+        "startLine": 83,
+        "endLine": 83,
+        "startOffset": 14,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75r",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 89,
+      "hash": "4e16496201e8c8deaa7958aab3800ddd",
+      "textRange": {
+        "startLine": 89,
+        "endLine": 89,
+        "startOffset": 14,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75s",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 120,
+      "hash": "f9299c2f6e7236187bc39378b183e8de",
+      "textRange": {
+        "startLine": 120,
+        "endLine": 120,
+        "startOffset": 14,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75t",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 124,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 124,
+        "endLine": 124,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75i",
+      "rule": "githubactions:S7636",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 151,
+      "hash": "208dd6f94f18465376adeed36484ea34",
+      "textRange": {
+        "startLine": 151,
+        "endLine": 151,
+        "startOffset": 46,
+        "endOffset": 78
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Avoid expanding secrets in a run block.",
+      "effort": "15min",
+      "debt": "15min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsh1fjOEeoxI75j",
+      "rule": "githubactions:S7636",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 152,
+      "hash": "afe5671cc42cd51d5acdfcb4d9084146",
+      "textRange": {
+        "startLine": 152,
+        "endLine": 152,
+        "startOffset": 50,
+        "endOffset": 86
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Avoid expanding secrets in a run block.",
+      "effort": "15min",
+      "debt": "15min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI752",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 54,
+      "hash": "f9299c2f6e7236187bc39378b183e8de",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 14,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI753",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 58,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 58,
+        "endLine": 58,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI754",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 129,
+      "hash": "55120b8066fc259fe88001942536a9ef",
+      "textRange": {
+        "startLine": 129,
+        "endLine": 129,
+        "startOffset": 14,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI755",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 133,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 133,
+        "endLine": 133,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI756",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 188,
+      "hash": "55120b8066fc259fe88001942536a9ef",
+      "textRange": {
+        "startLine": 188,
+        "endLine": 188,
+        "startOffset": 14,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZs21fjOEeoxI757",
+      "rule": "githubactions:S7637",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 192,
+      "hash": "9c16dc2d7a134a4ab32352e16d5dbeb5",
+      "textRange": {
+        "startLine": 192,
+        "endLine": 192,
+        "startOffset": 14,
+        "endOffset": 54
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use full commit SHA hash for this dependency.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtE1fjOEeoxI76A",
+      "rule": "pythonenterprise:S7693",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:chain.py",
+      "project": "Halcyora_Github-Actions",
+      "line": 53,
+      "hash": "bc96846d83b9e782de0429fa9b852629",
+      "textRange": {
+        "startLine": 53,
+        "endLine": 53,
+        "startOffset": 14,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure omitting guardrails is safe here.",
+      "effort": "45min",
+      "debt": "45min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtK1fjOEeoxI76C",
+      "rule": "docker:S6471",
+      "severity": "MINOR",
+      "component": "Halcyora_Github-Actions:dockerfile",
+      "project": "Halcyora_Github-Actions",
+      "line": 1,
+      "hash": "3df1638187b7578e8e4845476c4e364f",
+      "textRange": {
+        "startLine": 1,
+        "endLine": 1,
+        "startOffset": 0,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The \"python\" image runs with \"root\" as the default user. Make sure it is safe here.",
+      "effort": "15min",
+      "debt": "15min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "dockerfile",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtK1fjOEeoxI76D",
+      "rule": "docker:S8541",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:dockerfile",
+      "project": "Halcyora_Github-Actions",
+      "line": 7,
+      "hash": "f8152d14d514a28a3b9d7c066a6d5b8a",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 4,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Omitting \"--only-binary :all:\" can lead to the execution of setup scripts. Make sure it is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtK1fjOEeoxI76E",
+      "rule": "docker:S8544",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:dockerfile",
+      "project": "Halcyora_Github-Actions",
+      "line": 7,
+      "hash": "f8152d14d514a28a3b9d7c066a6d5b8a",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 4,
+        "endOffset": 36
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Using dependencies without locking resolved versions is security-sensitive.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtK1fjOEeoxI76B",
+      "rule": "docker:S6470",
+      "severity": "CRITICAL",
+      "component": "Halcyora_Github-Actions:dockerfile",
+      "project": "Halcyora_Github-Actions",
+      "line": 9,
+      "hash": "122cc0726218d54a3abd9f5829b89784",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 6,
+        "endOffset": 7
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Copying recursively might inadvertently add sensitive data to the container. Make sure it is safe here.",
+      "effort": "20min",
+      "debt": "20min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "dockerfile",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsK1fjOEeoxI75c",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/deployment.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 26,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsK1fjOEeoxI75b",
+      "rule": "kubernetes:S6897",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/deployment.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 29,
+      "hash": "8f02d0f40d63067f5f83e64e93e81ba6",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a storage request for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsK1fjOEeoxI75d",
+      "rule": "kubernetes:S6596",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/deployment.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 32,
+      "hash": "cefd407c6e970a79904551d4d17fe3ef",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 17,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a specific version tag for the image.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsS1fjOEeoxI75f",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/kind/chatbot.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 29,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsS1fjOEeoxI75e",
+      "rule": "kubernetes:S6897",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/kind/chatbot.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 30,
+      "hash": "8f02d0f40d63067f5f83e64e93e81ba6",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a storage request for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsS1fjOEeoxI75g",
+      "rule": "kubernetes:S6596",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/kind/chatbot.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 34,
+      "hash": "fd8b93db72bbdb062f34ea6a6f2117b9",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 17,
+        "endOffset": 51
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a specific version tag for the image instead of \"latest\".",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZsZ1fjOEeoxI75h",
+      "rule": "yaml:S2068",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:k8s/kind/monitoring-values.yaml",
+      "project": "Halcyora_Github-Actions",
+      "line": 42,
+      "hash": "681e4769514cab3d81bb8fd7f4063064",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 17,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "\"Password\" detected here, make sure this is not a hard-coded credential.",
+      "effort": "30min",
+      "debt": "30min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot",
+        "secret"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZpx1fjOEeoxI75a",
+      "rule": "python:S9073",
+      "severity": "MAJOR",
+      "component": "Halcyora_Github-Actions:tests/test_ingest.py",
+      "project": "Halcyora_Github-Actions",
+      "line": 83,
+      "hash": "95e5e9f55ec6caf93dae9d96288893d8",
+      "textRange": {
+        "startLine": 83,
+        "endLine": 83,
+        "startOffset": 8,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Split this composite assertion into separate assertions.",
+      "effort": "5min",
+      "debt": "5min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "pytest"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AaAZNZtR1fjOEeoxI76F",
+      "rule": "python:S1192",
+      "severity": "CRITICAL",
+      "component": "Halcyora_Github-Actions:verify.py",
+      "project": "Halcyora_Github-Actions",
+      "line": 9,
+      "hash": "35f82d3ef20983b46801273952f31c0e",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 6,
+        "endOffset": 15
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "Halcyora_Github-Actions:verify.py",
+              "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 6,
+                "endOffset": 15
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Halcyora_Github-Actions:verify.py",
+              "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 6,
+                "endOffset": 15
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \"Answer:\" 3 times.",
+      "effort": "6min",
+      "debt": "6min",
+      "assignee": "Halcyora-lshIE@github",
+      "author": "rupak.foruppo@gmail.com",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2026-08-19T07:14:16+0000",
+      "updateDate": "2026-08-19T08:48:42+0000",
+      "type": "CODE_SMELL",
+      "organization": "halcyora",
+      "cleanCodeAttribute": "DISTINCT",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Github-Actions",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "fee0cf85-7d88-4cfd-8882-678c6095aaee",
+      "lastChangeSource": "ANALYSIS"
+    }
+  ],
+  "components": [
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:k8s/deployment.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75H",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "k8s/deployment.yaml",
+      "path": "k8s/deployment.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:.github/workflows/02-BasicCI.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75R",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "02-BasicCI.yaml",
+      "longName": ".github/workflows/02-BasicCI.yaml",
+      "path": ".github/workflows/02-BasicCI.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:.github/workflows/03-tf-bootstrap.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75P",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "03-tf-bootstrap.yaml",
+      "longName": ".github/workflows/03-tf-bootstrap.yaml",
+      "path": ".github/workflows/03-tf-bootstrap.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:.github/workflows/05-build-deploy.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75O",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "05-build-deploy.yaml",
+      "longName": ".github/workflows/05-build-deploy.yaml",
+      "path": ".github/workflows/05-build-deploy.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions",
+      "uuid": "AaAZNT9ERT_BJWwgxRnn",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "Github-Actions",
+      "longName": "Github-Actions"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:k8s/kind/monitoring-values.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75L",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "monitoring-values.yaml",
+      "longName": "k8s/kind/monitoring-values.yaml",
+      "path": "k8s/kind/monitoring-values.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:k8s/kind/chatbot.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75K",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "chatbot.yaml",
+      "longName": "k8s/kind/chatbot.yaml",
+      "path": "k8s/kind/chatbot.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:verify.py",
+      "uuid": "AaAZNZPL1fjOEeoxI75Z",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "verify.py",
+      "longName": "verify.py",
+      "path": "verify.py"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:dockerfile",
+      "uuid": "AaAZNZPL1fjOEeoxI75Y",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "dockerfile",
+      "longName": "dockerfile",
+      "path": "dockerfile"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:tests/test_ingest.py",
+      "uuid": "AaAZNZPL1fjOEeoxI74w",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "test_ingest.py",
+      "longName": "tests/test_ingest.py",
+      "path": "tests/test_ingest.py"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:chain.py",
+      "uuid": "AaAZNZPL1fjOEeoxI75X",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "chain.py",
+      "longName": "chain.py",
+      "path": "chain.py"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:.github/workflows/04-infra-eks.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75T",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "04-infra-eks.yaml",
+      "longName": ".github/workflows/04-infra-eks.yaml",
+      "path": ".github/workflows/04-infra-eks.yaml"
+    },
+    {
+      "organization": "halcyora",
+      "key": "Halcyora_Github-Actions:.github/workflows/06-destroy.yaml",
+      "uuid": "AaAZNZPL1fjOEeoxI75S",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "06-destroy.yaml",
+      "longName": ".github/workflows/06-destroy.yaml",
+      "path": ".github/workflows/06-destroy.yaml"
+    }
+  ],
+  "organizations": [
+    {
+      "key": "halcyora",
+      "name": "Halcyora"
+    }
+  ],
+  "facets": []
+}

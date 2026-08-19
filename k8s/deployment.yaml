@@ -23,6 +23,7 @@ spec:
       labels:
         app: it-support-chatbot
     spec:
+      automountServiceAccountToken: false
       containers:
         # Container name must stay "chatbot" — the deploy workflow targets it
         # by name in rollout/status checks.

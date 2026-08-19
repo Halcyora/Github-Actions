@@ -1,0 +1,47 @@
+﻿severity,rule,message,file,line,type,status
+MAJOR,githubactions:S8264,Move this read permission from workflow level to job level.,.github/workflows/02-BasicCI.yaml,7,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/02-BasicCI.yaml,28,VULNERABILITY,OPEN
+MAJOR,githubactions:S8233,Move this write permission from workflow level to job level.,.github/workflows/02-BasicCI.yaml,6,VULNERABILITY,OPEN
+MAJOR,githubactions:S8544,Using dependencies without locking resolved versions is security-sensitive.,.github/workflows/02-BasicCI.yaml,22,VULNERABILITY,OPEN
+MAJOR,githubactions:S8541,"Omitting ""--only-binary :all:"" can lead to the execution of setup scripts. Make sure it is safe here.",.github/workflows/02-BasicCI.yaml,23,VULNERABILITY,OPEN
+MAJOR,githubactions:S8544,Using dependencies without locking resolved versions is security-sensitive.,.github/workflows/02-BasicCI.yaml,23,VULNERABILITY,OPEN
+MAJOR,githubactions:S6573,"Prefix files and paths with ""./"" or ""--"" when using glob.",.github/workflows/02-BasicCI.yaml,34,CODE_SMELL,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/02-BasicCI.yaml,56,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/02-BasicCI.yaml,61,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/03-tf-bootstrap.yaml,33,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/04-infra-eks.yaml,44,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/04-infra-eks.yaml,48,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/04-infra-eks.yaml,117,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/04-infra-eks.yaml,121,VULNERABILITY,OPEN
+BLOCKER,githubactions:S7630,"inputs.image_tag is vulnerable to script injection: values of inputs are provided by whoever triggers the workflow. Change this workflow to not use user-controlled data directly in a run block, for example by assigning this expression to an environment variable.",.github/workflows/05-build-deploy.yaml,43,VULNERABILITY,OPEN
+MAJOR,githubactions:S8544,Using dependencies without locking resolved versions is security-sensitive.,.github/workflows/05-build-deploy.yaml,58,VULNERABILITY,OPEN
+MAJOR,githubactions:S8541,"Omitting ""--only-binary :all:"" can lead to the execution of setup scripts. Make sure it is safe here.",.github/workflows/05-build-deploy.yaml,59,VULNERABILITY,OPEN
+MAJOR,githubactions:S8544,Using dependencies without locking resolved versions is security-sensitive.,.github/workflows/05-build-deploy.yaml,59,VULNERABILITY,OPEN
+MAJOR,githubactions:S6573,"Prefix files and paths with ""./"" or ""--"" when using glob.",.github/workflows/05-build-deploy.yaml,69,CODE_SMELL,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/05-build-deploy.yaml,80,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/05-build-deploy.yaml,83,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/05-build-deploy.yaml,89,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/05-build-deploy.yaml,120,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/05-build-deploy.yaml,124,VULNERABILITY,OPEN
+MAJOR,githubactions:S7636,Avoid expanding secrets in a run block.,.github/workflows/05-build-deploy.yaml,151,VULNERABILITY,OPEN
+MAJOR,githubactions:S7636,Avoid expanding secrets in a run block.,.github/workflows/05-build-deploy.yaml,152,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,54,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,58,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,129,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,133,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,188,VULNERABILITY,OPEN
+MAJOR,githubactions:S7637,Use full commit SHA hash for this dependency.,.github/workflows/06-destroy.yaml,192,VULNERABILITY,OPEN
+MAJOR,pythonenterprise:S7693,Make sure omitting guardrails is safe here.,chain.py,53,VULNERABILITY,OPEN
+MINOR,docker:S6471,"The ""python"" image runs with ""root"" as the default user. Make sure it is safe here.",dockerfile,1,VULNERABILITY,OPEN
+MAJOR,docker:S8541,"Omitting ""--only-binary :all:"" can lead to the execution of setup scripts. Make sure it is safe here.",dockerfile,7,VULNERABILITY,OPEN
+MAJOR,docker:S8544,Using dependencies without locking resolved versions is security-sensitive.,dockerfile,7,VULNERABILITY,OPEN
+CRITICAL,docker:S6470,Copying recursively might inadvertently add sensitive data to the container. Make sure it is safe here.,dockerfile,9,VULNERABILITY,OPEN
+MAJOR,kubernetes:S6865,Bind this resource's automounted service account to RBAC or disable automounting.,k8s/deployment.yaml,26,VULNERABILITY,OPEN
+MAJOR,kubernetes:S6897,Specify a storage request for this container.,k8s/deployment.yaml,29,CODE_SMELL,OPEN
+MAJOR,kubernetes:S6596,Use a specific version tag for the image.,k8s/deployment.yaml,32,CODE_SMELL,OPEN
+MAJOR,kubernetes:S6865,Bind this resource's automounted service account to RBAC or disable automounting.,k8s/kind/chatbot.yaml,29,VULNERABILITY,OPEN
+MAJOR,kubernetes:S6897,Specify a storage request for this container.,k8s/kind/chatbot.yaml,30,CODE_SMELL,OPEN
+MAJOR,kubernetes:S6596,"Use a specific version tag for the image instead of ""latest"".",k8s/kind/chatbot.yaml,34,CODE_SMELL,OPEN
+MAJOR,yaml:S2068,"""Password"" detected here, make sure this is not a hard-coded credential.",k8s/kind/monitoring-values.yaml,42,VULNERABILITY,OPEN
+MAJOR,python:S9073,Split this composite assertion into separate assertions.,tests/test_ingest.py,83,CODE_SMELL,OPEN
+CRITICAL,python:S1192,"Define a constant instead of duplicating this literal ""Answer:"" 3 times.",verify.py,9,CODE_SMELL,OPEN

@@ -80,7 +80,8 @@ class TestLoadDocuments:
         assert os.path.exists(entry["path"]), f"Missing knowledge file: {entry['path']}"
 
         docs = ingest_module._load_documents()
-        assert docs and docs[0].page_content.strip()
+        assert docs
+        assert docs[0].page_content.strip()
 
 
 class TestSplitDocuments:

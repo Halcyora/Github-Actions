@@ -52,6 +52,7 @@ def build_agent(vectorstore: Chroma):
     return create_agent(
         model=ChatBedrockConverse(model_id=CHAT_MODEL_ID, temperature=0),
         tools=[search_it_knowledge],
+        guardrails=False,
         system_prompt=IT_SYSTEM_PROMPT,
         checkpointer=_checkpointer,
         middleware=[ModelRetryMiddleware(max_retries=3)],
