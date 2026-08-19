@@ -30,7 +30,7 @@ spec:
         - name: chatbot
           # Placeholder token only. CI renders this to the immutable image ref
           # built by that run before applying the manifest.
-          image: PIPELINE_IMAGE
+          image: PIPELINE_IMAGE:stable
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -44,9 +44,11 @@ spec:
             requests:
               cpu: 250m
               memory: 512Mi
+              ephemeral-storage: 512Mi
             limits:
               cpu: 1000m
               memory: 1Gi
+              ephemeral-storage: 1Gi
           # Streamlit's health endpoint. Startup probe covers the slow first
           # boot (Bedrock embedding of the knowledge base) and allows up to
           # 2.5 minutes before the liveness probe starts enforcing.

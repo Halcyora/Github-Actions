@@ -172,7 +172,7 @@ jobs:
           IMAGE_REF="${DOCKERHUB_REPO}:${IMAGE_TAG}"
           RENDER_DIR="$(mktemp -d)"
           cp -R "$K8S_DIR"/. "$RENDER_DIR"/
-          sed "s|PIPELINE_IMAGE|$IMAGE_REF|" \
+          sed "s|PIPELINE_IMAGE:stable|$IMAGE_REF|" \
             "$K8S_DIR/deployment.yaml" > "$RENDER_DIR/deployment.yaml"
           if grep -q 'PIPELINE_IMAGE' "$RENDER_DIR/deployment.yaml"; then
             echo '::error::Image placeholder was not rendered in deployment.yaml.'
