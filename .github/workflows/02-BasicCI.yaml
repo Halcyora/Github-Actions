@@ -2,6 +2,10 @@
 name: Basic CI
 on:
   workflow_dispatch: # manual trigger
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,8 +26,17 @@ jobs:
       - name: Run tests with coverage
         run: |
           pytest
+      - name: Verify coverage report exists
+        run: |
+          test -f coverage.xml
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@e44258b109568baa0df60ed515909fc6c72cba92 # v2
+        with:
+          args: >
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.sources=.
+            -Dsonar.tests=tests
+            -Dsonar.test.inclusions=tests/**/*.py
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: Build artifact
