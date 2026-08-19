@@ -29,10 +29,21 @@ jobs:
       - name: Verify coverage report exists
         run: |
           test -f coverage.xml
+      - name: Validate Sonar token
+        run: |
+          if [ -z "${SONAR_TOKEN:-}" ]; then
+            echo "::error::SONAR_TOKEN secret is missing. Configure repository secret SONAR_TOKEN."
+            exit 1
+          fi
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@e44258b109568baa0df60ed515909fc6c72cba92 # v2
+        uses: SonarSource/sonarqube-scan-action@v5
         with:
           args: >
+            -Dsonar.projectKey=Halcyora_Github-Actions
+            -Dsonar.organization=halcyora
             -Dsonar.python.coverage.reportPaths=coverage.xml
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
