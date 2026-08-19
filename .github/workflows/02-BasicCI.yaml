@@ -34,9 +34,6 @@ jobs:
         with:
           args: >
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.sources=.
-            -Dsonar.tests=tests
-            -Dsonar.test.inclusions=tests/**/*.py
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: Build artifact
