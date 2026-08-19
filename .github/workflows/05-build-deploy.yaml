@@ -37,16 +37,23 @@ jobs:
 
       # Immutable SHA tag is what gets deployed; :latest is a convenience
       # pointer only. Never deploy by :latest — it makes rollbacks ambiguous.
+      - name: Validate image tag input
+        run: |
+          if [[ ! -z "${{ inputs.image_tag }}" && ! "${{ inputs.image_tag }}" =~ ^[a-zA-Z0-9._-]+$ ]]; then
+            echo "::error::Invalid image tag format. Only alphanumeric, hyphens, underscores, and periods are allowed."
+            exit 1
+          fi
+
       - name: Resolve image tag
         id: meta
         env:
           INPUT_IMAGE_TAG: ${{ inputs.image_tag }}
         run: |
-          TAG="$INPUT_IMAGE_TAG"
+          TAG="${INPUT_IMAGE_TAG}"
           if [ -z "$TAG" ]; then
             TAG="$(git rev-parse --short HEAD)"
           fi
-          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
           echo "ref=${DOCKERHUB_REPO}:${TAG}" >> "$GITHUB_OUTPUT"
           echo "Building ${DOCKERHUB_REPO}:${TAG}"
 
@@ -67,8 +74,8 @@ jobs:
       - name: Build source artifact
         run: |
           mkdir -p dist
-          cp -- ./*.py ./requirements.txt ./readme.md ./dockerfile ./it_sector.txt dist/
-          if [ -d "$K8S_DIR" ]; then cp -r "$K8S_DIR" dist/; fi
+          cp -- ./*.py ./requirements.txt ./readme.md ./dockerfile ./it_sector.txt ./dist/
+          if [ -d "$K8S_DIR" ]; then cp -r "$K8S_DIR" ./dist/; fi
 
       - name: Upload source artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

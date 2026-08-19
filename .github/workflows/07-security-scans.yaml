@@ -58,10 +58,10 @@ jobs:
         # upstream breakage before the base image moves.
         python-version: ['3.11', '3.12']
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
@@ -69,8 +69,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          pip install --only-binary :all: -r requirements.txt
+          pip install --only-binary :all: pytest pytest-cov
 
       # The suite mocks Bedrock/Chroma throughout, so it needs no AWS creds.
       - name: Run unit tests with coverage
@@ -83,7 +83,7 @@ jobs:
             --cov-config=.coveragerc
 
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
         with:
           name: test-results-${{ matrix.python-version }}
@@ -96,7 +96,7 @@ jobs:
       # upload two conflicting reports for the same commit.
       - name: Upload coverage artifact
         if: matrix.python-version == '3.11'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: coverage-report
           path: coverage.xml
@@ -104,7 +104,7 @@ jobs:
 
       - name: Publish test summary
         if: always()
-        uses: test-summary/action@v2
+        uses: test-summary/action@5e9a47dd3e5c33e1b889d37eb2f1a4f12e35e3b3 # v2
         with:
           paths: test-results-${{ matrix.python-version }}.xml
           show: 'fail, skip'
@@ -115,13 +115,13 @@ jobs:
     needs: test
     name: SAST scan on the source code
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           # SonarCloud needs full history to attribute issues to authors/branches.
           fetch-depth: 0
 
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
@@ -129,7 +129,7 @@ jobs:
       - name: Install scanners
         run: |
           python -m pip install --upgrade pip
-          pip install bandit[sarif] semgrep
+          pip install --only-binary :all: bandit[sarif] semgrep
 
       # Bandit is the Python SAST engine. It never fails the build directly —
       # findings land in the Security tab so they can be triaged, not ignored.
@@ -139,7 +139,7 @@ jobs:
         run: bandit -r . -f sarif -o bandit.sarif --exit-zero --exclude ./dist,./terraform,./k8s,./tests
 
       - name: Upload Bandit results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: always() && hashFiles('bandit.sarif') != ''
         with:
           sarif_file: bandit.sarif
@@ -158,7 +158,7 @@ jobs:
             || true
 
       - name: Upload Semgrep results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: always() && hashFiles('semgrep.sarif') != ''
         with:
           sarif_file: semgrep.sarif
@@ -167,7 +167,7 @@ jobs:
       # Skipped automatically when SONAR_TOKEN is not configured, so the rest of
       # the pipeline still runs on forks and on repos without SonarCloud set up.
       - name: Download coverage report
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         continue-on-error: true
         with:
           name: coverage-report
@@ -211,10 +211,10 @@ jobs:
     needs: test
     name: SCA scan on dependencies
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -230,7 +230,7 @@ jobs:
           args: --file=requirements.txt --package-manager=pip --sarif-file-output=snyk.sarif
 
       - name: Upload Snyk results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: hashFiles('snyk.sarif') != ''
         with:
           sarif_file: snyk.sarif
@@ -240,7 +240,8 @@ jobs:
       # and whenever SNYK_TOKEN is absent.
       - name: Run pip-audit
         run: |
-          python -m pip install --upgrade pip pip-audit
+          python -m pip install --upgrade pip
+          pip install --only-binary :all: pip-audit
           pip-audit -r requirements.txt --desc --format=markdown --output=pip-audit.md || true
           {
             echo "### pip-audit (dependency CVEs)"
@@ -248,7 +249,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload pip-audit report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
         with:
           name: pip-audit-report
@@ -263,13 +264,13 @@ jobs:
     needs: test
     name: Build container image
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Set up Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3
 
       - name: Build image to a tarball
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6
         with:
           context: .
           file: ./dockerfile
@@ -280,7 +281,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Upload image artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: container-image
           path: /tmp/image.tar
@@ -292,7 +293,7 @@ jobs:
     needs: build_image
     name: Container image and Dockerfile scanning
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       # --- Dockerfile linting: catches issues before they reach an image ---
       - name: Lint Dockerfile with Hadolint
@@ -305,7 +306,7 @@ jobs:
           no-fail: true
 
       - name: Upload Hadolint results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: hashFiles('hadolint.sarif') != ''
         with:
           sarif_file: hadolint.sarif
@@ -313,7 +314,7 @@ jobs:
 
       # --- Load the exact image the other jobs use ---
       - name: Download image artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
           name: container-image
           path: /tmp
@@ -336,7 +337,7 @@ jobs:
           vuln-type: os,library
 
       - name: Upload Trivy image results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: always() && hashFiles('trivy-image.sarif') != ''
         with:
           sarif_file: trivy-image.sarif
@@ -377,7 +378,7 @@ jobs:
           fail-build: false
 
       - name: Upload Grype results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: always() && steps.grype.outputs.sarif != ''
         with:
           sarif_file: ${{ steps.grype.outputs.sarif }}
@@ -397,7 +398,7 @@ jobs:
           exit-code: '0'
 
       - name: Upload Dockle results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: hashFiles('dockle.sarif') != ''
         with:
           sarif_file: dockle.sarif
@@ -417,7 +418,7 @@ jobs:
           severity: MEDIUM,HIGH,CRITICAL
 
       - name: Upload Trivy config results
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@3ab4101902d5d37b76b49db3c9a31128c308c43b # v4
         if: always() && hashFiles('trivy-config.sarif') != ''
         with:
           sarif_file: trivy-config.sarif
@@ -455,7 +456,7 @@ jobs:
           output: sbom.cdx.json
 
       - name: Upload SBOM
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
         with:
           name: sbom
@@ -482,10 +483,10 @@ jobs:
     needs: [sca, container_scan]
     name: DAST scan on the running web application
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Download image artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
           name: container-image
           path: /tmp

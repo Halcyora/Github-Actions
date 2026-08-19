@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      security-events: write
     steps:
       - name: Checkout code
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -39,7 +40,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarqube-scan-action@921593bd8bae82d1b4370a6abdb872bbf4b85d08 # v5
         with:
           args: >
             -Dsonar.projectKey=Halcyora_Github-Actions
@@ -62,6 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     permissions:
+      security-events: write
       contents: write
 
     steps:
