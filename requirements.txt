@@ -1,4 +1,6 @@
 # Requires Python 3.10+
+pytest>=8.0.0
+pytest-cov>=5.0.0
 langchain>=1.0.0
 langchain-community>=0.3.0
 langchain-text-splitters>=0.3.0

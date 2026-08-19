@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "timeoutSec": 60,
+        "powershell": ".github/hooks/sonar-secrets/build-scripts/pretool-secrets.ps1"
+      }
+    ]
+  }
+}
